@@ -1,0 +1,21 @@
+
+  <div class="row" *ngFor = "let hero of heroes">
+      <div class="col-4">
+          {{hero.name}}
+      </div>
+        <div class="col-2">
+            <span class="badge badge-primary badge-pill">{{hero.rating}}</span>
+        </div>
+
+        <div class="col-1">
+            <button type="button" class="btn btn-success" (click)='voteUp(hero)'>
+                <i class="fa fa-thumbs-o-up" ></i>
+              </button>
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn btn-danger" (click)='voteDown(hero)'>
+                <i class="fa fa-thumbs-o-down"></i>
+              </button>
+        </div>
+    </div>
+
